@@ -13,6 +13,8 @@
     {"name":"inst_6E91679C","path":"rooms/Fih_Room/Fih_Room.yy",},
     {"name":"inst_49274A23","path":"rooms/Fih_Room/Fih_Room.yy",},
     {"name":"inst_48880139","path":"rooms/Fih_Room/Fih_Room.yy",},
+    {"name":"inst_1C977338","path":"rooms/Fih_Room/Fih_Room.yy",},
+    {"name":"inst_5DD3332F","path":"rooms/Fih_Room/Fih_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -26,6 +28,8 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Fih","depth":100,"effectEnabled":true,"effectType":null,"gridX":10,"gridY":10,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_48880139","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48880139","objectId":{"name":"obj_fast_fih","path":"objects/obj_fast_fih/obj_fast_fih.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":150.0,"y":110.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1C977338","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C977338","objectId":{"name":"obj_slow_fih","path":"objects/obj_slow_fih/obj_slow_fih.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":90.0,"y":110.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5DD3332F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DD3332F","objectId":{"name":"obj_small_fih","path":"objects/obj_small_fih/obj_small_fih.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.0,"y":110.0,},
       ],"layers":[],"name":"Fih","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Boat","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_33A1F960","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_33A1F960","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"background_spr","path":"sprites/background_spr/background_spr.yy",},"x":0.0,"y":0.0,},

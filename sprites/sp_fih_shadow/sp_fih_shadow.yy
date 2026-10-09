@@ -19,7 +19,8 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5652495d-2453-40d8-9a53-2ee92e420254","blendMode":0,"displayName":"default","isLocked":false,"name":"5652495d-2453-40d8-9a53-2ee92e420254","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7fa5092c-69b1-4ad8-8b20-5ae19cc74e02","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"7fa5092c-69b1-4ad8-8b20-5ae19cc74e02","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5652495d-2453-40d8-9a53-2ee92e420254","blendMode":0,"displayName":"default","isLocked":false,"name":"5652495d-2453-40d8-9a53-2ee92e420254","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"sp_fih_shadow",
   "nineSlice":null,

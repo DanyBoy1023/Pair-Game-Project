@@ -46,11 +46,15 @@ if game_state == GAME_STATE.REELING
 	// if the player is pulling in the opposite direction add to the progress
 	if _hmove == reeling_fih.side * -1
 	{
+		// correct reeling
 		obj_game_manager.progress += reeling_fih.progress_gain
 		reeling_fih.y += reeling_fih.progress_gain * DELTA
+		obj_fih_pole_tip.image_speed = 1
 	}
 	else
 	{
+		// incorrect reeling
 		reeling_fih.y -= reeling_fih.progress_loss * DELTA
+		obj_fih_pole_tip.image_speed = 0
 	}
 }

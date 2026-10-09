@@ -5,10 +5,10 @@
   "managed":true,
   "name":"obj_fast_fih",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"min_distance_change","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"max_distance_change","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"middle_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"outter_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"min_distance_change","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"max_distance_change","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"80",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"middle_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"outter_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
     "name":"Fih Variations",

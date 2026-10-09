@@ -2,4 +2,4 @@
 
 set_goto_to_new_spot()
 
-alarm[0] = random_range(50, 100)
+set_random_move_duration()

@@ -4,6 +4,5 @@ if obj_game_manager.state == GAME_STATE.MOVING
 	reeling_fih = other
 	reeling_fih.x = x
 	obj_game_manager.reel()
-	reeling_fih.alarm[0] = reeling_fih.move_speed
-	reeling_fih.alarm[1] = reeling_fih.lose_alarm_seconds * game_get_speed(gamespeed_fps);
+	reeling_fih.start_reeling()
 }

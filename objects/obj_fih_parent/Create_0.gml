@@ -1,6 +1,10 @@
+randomise()
 // 1 == right | -1 == left
 side = 1
 
+scale = 1
+
+escaping = false
 // how much the fish moves down and up when you're succesfully pulling in the right or wrong direction
 progress_gain = .3
 progress_loss = .1
@@ -22,7 +26,11 @@ fishing_pole_center = obj_fih_pole_tip.x
 // the things that will differ is the movement speed
 move_speed = 10
 
-
+function start_reeling()
+{
+	set_random_move_duration()
+	alarm[1] = lose_alarm_seconds * FPS
+}
 
 function set_goto_to_new_spot()
 {
@@ -67,6 +75,17 @@ function set_goto_to_new_spot()
 		goto_x = random_range(left_margin, right_margin)
 	}
 }
+
+function set_random_move_duration()
+{
+	alarm[0] = random_range(min_move_duration * FPS, max_move_duration* FPS)
+}
+
+function escape()
+{
+	escaping = true
+}
+
 
 // when fih is spawned, move to a valid spot for this fih
 
