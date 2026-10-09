@@ -1,3 +1,5 @@
+randomise()
+
 enum GAME_STATE {
 	WAITING,
 	THROWING,
@@ -36,4 +38,7 @@ function catch_fih()
 function lose_fih()
 {
 	state = GAME_STATE.WAITING
+	instance_destroy(obj_fih_parent)
+	obj_fih_spawner.spawn_random_fih()
 }
+

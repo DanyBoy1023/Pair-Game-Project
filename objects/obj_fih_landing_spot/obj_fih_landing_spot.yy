@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sp_fih_landing_spot",
+    "path":"sprites/sp_fih_landing_spot/sp_fih_landing_spot.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

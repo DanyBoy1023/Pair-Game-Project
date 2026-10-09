@@ -32,5 +32,5 @@
     "path":"sprites/sp_fih_collector/sp_fih_collector.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"fishing_rod_stills1",
+    "path":"sprites/fishing_rod_stills1/fishing_rod_stills1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
