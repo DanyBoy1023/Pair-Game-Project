@@ -1,3 +1,8 @@
+/*
+3 lives
+when they lose a fih 
+*/
+
 randomise()
 
 enum GAME_STATE {

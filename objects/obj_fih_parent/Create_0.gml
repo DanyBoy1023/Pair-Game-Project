@@ -23,10 +23,13 @@ sprite_index = shadow
 // the position the fish will move to at random intervals
 goto_x = x
 start_x = x
+
+// variables for animation curve for when the fih is being reeled in
 curve_channel = animcurve_get_channel(reeling_curve, 0); 
 animation_percent = 0
 animation_speed = reeling_move_speed/100;
 
+// variables for random idle movement
 velocity = 0
 accelaration = .01
 
