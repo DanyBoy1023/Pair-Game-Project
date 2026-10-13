@@ -2,7 +2,9 @@ randomise()
 // 1 == right | -1 == left
 side = 1
 
-scale = 1
+spawn_scale = .1
+image_xscale = spawn_scale
+image_yscale = spawn_scale
 
 escaping = false
 // how much the fish moves down and up when you're succesfully pulling in the right or wrong direction
@@ -13,23 +15,34 @@ progress_loss = .1
 // how long until the fish goes away and you fail to catch it
 lose_alarm_seconds = 10
 
+alarm[3] = random_range(lose_alarm_seconds/2, lose_alarm_seconds) * FPS
+
 shadow = sp_fih_shadow
 fih_sprite = sprite_index
 sprite_index = shadow
 // the position the fish will move to at random intervals
 goto_x = x
+start_x = x
+curve_channel = animcurve_get_channel(reeling_curve, 0); 
+animation_percent = 0
+animation_speed = reeling_move_speed/100;
+
+velocity = 0
+accelaration = .01
 
 room_middle = room_width/2
 
 fishing_pole_center = obj_fih_pole_tip.x
 
-// the things that will differ is the movement speed
-move_speed = 10
-
 function start_reeling()
 {
-	set_random_move_duration()
+	set_side()
+	set_goto_to_new_spot()
+	//set_random_move_duration()
 	alarm[1] = lose_alarm_seconds * FPS
+	start_x = x
+	// stop going away
+	alarm[3] = 0
 }
 
 function set_goto_to_new_spot()
@@ -78,7 +91,7 @@ function set_goto_to_new_spot()
 
 function set_random_move_duration()
 {
-	alarm[0] = random_range(min_move_duration * FPS, max_move_duration* FPS)
+	alarm[0] = random_range(min_wait_time * FPS, max_wait_time * FPS)
 }
 
 function escape()
@@ -86,6 +99,18 @@ function escape()
 	escaping = true
 }
 
+function set_side()
+{
+	// if the fih's x position is greater than the fishing pole, then the fih is on the right
+	if x > fishing_pole_center 
+	{
+		side = 1
+	}
+	else 
+	{
+		side = -1
+	}
+}
 
 // when fih is spawned, move to a valid spot for this fih
 

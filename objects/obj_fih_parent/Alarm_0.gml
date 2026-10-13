@@ -2,4 +2,8 @@
 
 set_goto_to_new_spot()
 
-set_random_move_duration()
+animation_percent = 0
+
+start_x = x
+
+//set_random_move_duration()

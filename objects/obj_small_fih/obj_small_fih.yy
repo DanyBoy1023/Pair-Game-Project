@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_small_fih",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_small_fih",
   "overriddenProperties":[
@@ -11,6 +9,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"max_distance_change","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"middle_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"outter_gap","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fih_parent","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"propertyId":{"name":"scale","path":"objects/obj_fih_parent/obj_fih_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":".7",},
   ],
   "parent":{
     "name":"Fih Variations",

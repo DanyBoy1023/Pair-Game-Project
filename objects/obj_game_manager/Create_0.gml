@@ -57,12 +57,15 @@ function catch_fih()
 	obj_fih_parent.image_yscale = .1
 	
 	obj_fih_pole_tip.image_speed = 0
+	// start spawning new fih
+	obj_fih_spawner.start_fih_spawn()
 }
 
 function lose_fih()
 {
 	state = GAME_STATE.WAITING
 	obj_fih_parent.escape()
-	obj_fih_spawner.spawn_random_fih()
+	// start spawning new fih
+	obj_fih_spawner.start_fih_spawn()
 }
 
