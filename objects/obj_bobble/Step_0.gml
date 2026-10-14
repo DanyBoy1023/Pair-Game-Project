@@ -8,7 +8,7 @@ var _move_left  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 // Calculate horizontal movement direction (returns -1, 0, or 1)
 var _hmove = _move_right - _move_left;
 
-if game_state == GAME_STATE.WAITING or game_state == GAME_STATE.CATCHING
+if game_state == GAME_STATE.WAITING or game_state == GAME_STATE.CATCHING or game_state == GAME_STATE.EVIL_DAMAGE
 {
 	x = lerp(x, obj_fih_pole_tip.x, .2)
 	y = lerp(y, obj_fih_pole_tip.y, .2)
