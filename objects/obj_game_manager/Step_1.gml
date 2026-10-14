@@ -7,7 +7,7 @@ if state == GAME_STATE.WAITING
 	}
 }
 
-if state == GAME_STATE.CATCHING
+if state == GAME_STATE.CATCHING or state == GAME_STATE.EVIL_DAMAGE
 {
 	var _cought_fih = cought_fih
 	with obj_fih_parent
@@ -28,8 +28,12 @@ if state == GAME_STATE.CATCHING
 			image_yscale = lerp(image_yscale, final_scale, lerp_amount)
 		}
 	}
-	
-	if keyboard_check_pressed(vk_space)
+	if state == GAME_STATE.EVIL_DAMAGE and mid_lose_animation
+	{
+		cought_fih.image_xscale = .1
+		cought_fih.image_yscale = .1
+	}
+	if keyboard_check_pressed(vk_space) and state != GAME_STATE.EVIL_DAMAGE
 	{
 		state = GAME_STATE.WAITING
 		instance_destroy(cought_fih)

@@ -54,6 +54,8 @@ function reel()
 
 cought_fih = obj_fih_parent
 
+sequence_id = noone
+mid_lose_animation = false
 function catch_fih(fih)
 {
 	catch_count++
@@ -74,6 +76,8 @@ function catch_fih(fih)
 	if cought_fih.object_index == obj_evil_fih
 	{
 		state = GAME_STATE.EVIL_DAMAGE
+		
+		alarm[0] = 2 * FPS
 	}
 	else
 	{
@@ -82,11 +86,18 @@ function catch_fih(fih)
 	}
 	obj_bobble.sprite_index = obj_bobble.out_of_water_sprite
 }
-
+function end_attack_seq()
+{
+	state = GAME_STATE.WAITING
+	instance_destroy(cought_fih)
+	layer_sequence_destroy(sequence_id)
+	obj_health_bar.take_damage()
+	obj_fih_spawner.start_fih_spawn()
+}
 function lose_fih()
 {
 	state = GAME_STATE.WAITING
-	if obj_fih_parent != obj_evil_fih
+	if obj_fih_parent.object_index != obj_evil_fih
 	{
 		obj_health_bar.take_damage()
 	}

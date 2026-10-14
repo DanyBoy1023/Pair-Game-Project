@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite15",
-    "path":"sprites/Sprite15/Sprite15.yy",
+    "name":"sp_health_bar",
+    "path":"sprites/sp_health_bar/sp_health_bar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

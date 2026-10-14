@@ -58,3 +58,11 @@ if game_state == GAME_STATE.REELING
 		obj_fih_pole_tip.image_speed = 0
 	}
 }
+
+var scale = 1
+if sprite_index == reeling_sprite or sprite_index == idle_water_sprite
+{
+	scale = 1/5
+}
+image_xscale = scale
+image_yscale = scale
