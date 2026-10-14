@@ -6,11 +6,13 @@ when they lose a fih
 randomise()
 
 enum GAME_STATE {
+	DEAD,
 	WAITING,
 	THROWING,
 	MOVING,
 	REELING,
-	CATCHING
+	CATCHING,
+	EVIL_DAMAGE
 }
 state = GAME_STATE.WAITING
 
@@ -30,6 +32,7 @@ function reached_water()
 {
 	state = GAME_STATE.MOVING
 	obj_fih_pole_tip.image_speed = 0
+	obj_bobble.sprite_index = obj_bobble.idle_water_sprite
 }
 
 function reel() 
@@ -49,28 +52,51 @@ function reel()
 	}
 }
 
-function catch_fih()
+cought_fih = obj_fih_parent
+
+function catch_fih(fih)
 {
 	catch_count++
 	
 	state = GAME_STATE.CATCHING
 	// reset fih so it don't run any more alarms
-	obj_fih_parent.alarm[0] = 0
-	obj_fih_parent.alarm[1] = 0
+	cought_fih = fih
+	with cought_fih
+	{
+		alarm[0] = 0
+		alarm[1] = 0
 	
-	obj_fih_parent.image_xscale = .1
-	obj_fih_parent.image_yscale = .1
+		image_xscale = .1
+		image_yscale = .1
 	
-	obj_fih_pole_tip.image_speed = 0
-	// start spawning new fih
-	obj_fih_spawner.start_fih_spawn()
+		image_speed = 0
+	}
+	if cought_fih.object_index == obj_evil_fih
+	{
+		state = GAME_STATE.EVIL_DAMAGE
+	}
+	else
+	{
+		// start spawning new fih
+		obj_fih_spawner.start_fih_spawn()
+	}
+	obj_bobble.sprite_index = obj_bobble.out_of_water_sprite
 }
 
 function lose_fih()
 {
 	state = GAME_STATE.WAITING
+	if obj_fih_parent != obj_evil_fih
+	{
+		obj_health_bar.take_damage()
+	}
 	obj_fih_parent.escape()
 	// start spawning new fih
 	obj_fih_spawner.start_fih_spawn()
+	obj_bobble.sprite_index = obj_bobble.out_of_water_sprite
 }
 
+function end_game()
+{
+	state = GAME_STATE.DEAD
+}

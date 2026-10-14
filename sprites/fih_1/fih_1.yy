@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Fih Variations",
+    "path":"folders/Sprites/Fih Variations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

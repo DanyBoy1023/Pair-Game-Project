@@ -1,7 +1,10 @@
 var game_state = obj_game_manager.state
-
+if game_state == GAME_STATE.EVIL_DAMAGE
+{
+	return
+}
 // random movement when waiting
-if game_state == GAME_STATE.WAITING or game_state == GAME_STATE.MOVING or game_state == GAME_STATE.THROWING
+if game_state != GAME_STATE.REELING
 {
 	// slowly move towards random spot
 	// I need a move toward or a speed, that lowers to 0 then accelarates to a new point

@@ -12,3 +12,8 @@ animation_speed = 0.01; // How fast it moves from 0 to 1
 
 throw_start_y = obj_fih_pole_tip.y
 throw_end_y = obj_fih_landing_spot.y
+
+
+out_of_water_sprite = sp_bobber_out_of_water
+idle_water_sprite = sp_bobber_bobbing
+reeling_sprite = sp_bobber_reeling

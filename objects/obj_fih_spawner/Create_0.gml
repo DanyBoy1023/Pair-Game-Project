@@ -1,5 +1,6 @@
 
-possible_fih_spawns = [obj_fast_fih, obj_slow_fih, obj_small_fih]
+possible_fih_spawns = [obj_fast_fih, obj_slow_fih, obj_small_fih, obj_evil_fih]
+possible_fih_spawns = [obj_evil_fih]
 
 max_fih_amount = 3
 
@@ -12,6 +13,7 @@ start_fih_spawn()
 function start_fih_spawn()
 {
 	alarm[0] = random_range(min_fih_spawn_wait_seconds * FPS, max_fih_spawn_wait_seconds * FPS)
+	alarm[0] = max(alarm[0], 2)
 	waiting_to_spawn = true
 }
 

@@ -1,10 +1,19 @@
+var scale = 1
+if sprite_index == reeling_sprite or sprite_index == idle_water_sprite
+{
+	scale = 1/5
+}
+image_xscale = scale
+image_yscale = scale
+draw_self()
+
 //draw_line(x, y, obj_fih_pole_tip.x, obj_fih_pole_tip.y)
 if (instance_exists(obj_fih_pole_tip)) {
     var segments = 15; // More segments = smoother curve
     var start_x = obj_fih_pole_tip.x;
     var start_y = obj_fih_pole_tip.y;
     var end_x = x;
-    var end_y = y;
+    var end_y = bbox_top;
     
     // Determine how much the line should sag at its lowest point
     var sag_amount = distance_to_object(obj_fih_pole_tip)/4;
@@ -34,4 +43,3 @@ if (instance_exists(obj_fih_pole_tip)) {
         last_y = current_y;
     }
 }
-draw_self()

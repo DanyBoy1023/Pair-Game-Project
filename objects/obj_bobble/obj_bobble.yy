@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_bobble",
-    "path":"sprites/sp_bobble/sp_bobble.yy",
+    "name":"sp_bobber_out_of_water",
+    "path":"sprites/sp_bobber_out_of_water/sp_bobber_out_of_water.yy",
   },
   "spriteMaskId":null,
   "visible":true,

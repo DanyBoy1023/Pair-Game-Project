@@ -5,4 +5,5 @@ if obj_game_manager.state == GAME_STATE.MOVING
 	reeling_fih.x = x
 	obj_game_manager.reel()
 	reeling_fih.start_reeling()
+	sprite_index = sp_bobber_reeling
 }
