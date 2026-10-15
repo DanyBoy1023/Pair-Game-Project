@@ -11,7 +11,7 @@ if game_state != GAME_STATE.REELING
 	}
 	
 	// if this is the player's third catch, then guarantee the evil fih to spawn alone
-	if catch_count == 2
+	if catch_count == forced_evil_spawn
 	{
 		replace_spawn_with_evil_spawn = true
 		if not waiting_to_spawn and fih_count < 1

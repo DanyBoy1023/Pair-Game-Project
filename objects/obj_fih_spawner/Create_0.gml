@@ -13,6 +13,7 @@ waiting_to_spawn = false
 
 replace_spawn_with_evil_spawn = false
 spawn_count = 0
+forced_evil_spawn = 2
 
 start_fih_spawn()
 
@@ -31,7 +32,7 @@ function spawn_random_fih()
 
 function get_random_fih_to_spawn()
 {
-	if replace_spawn_with_evil_spawn or spawn_count % 4 == 0
+	if obj_game_manager.catch_count >= forced_evil_spawn and (replace_spawn_with_evil_spawn or spawn_count % 4 == 0)
 	{
 		replace_spawn_with_evil_spawn = false
 		return obj_evil_fih

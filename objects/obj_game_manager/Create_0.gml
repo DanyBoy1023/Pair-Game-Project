@@ -76,7 +76,6 @@ function catch_fih(fih)
 	}
 	if cought_fih.object_index == obj_evil_fih
 	{
-		catch_count--
 		state = GAME_STATE.EVIL_DAMAGE
 		
 		alarm[0] = 2 * FPS
