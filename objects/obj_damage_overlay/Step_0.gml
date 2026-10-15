@@ -10,8 +10,3 @@ else
 {
 	image_alpha = lerp(image_alpha, 0, .2)
 }
-
-if keyboard_check(ord("D"))
-{
-	flash_overlay()
-}

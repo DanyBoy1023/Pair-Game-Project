@@ -40,3 +40,10 @@ if state == GAME_STATE.CATCHING or state == GAME_STATE.EVIL_DAMAGE
 	}
 }
 
+if state == GAME_STATE.DEAD
+{
+	if keyboard_check_pressed(vk_space)
+	{
+		room_restart()
+	}
+}

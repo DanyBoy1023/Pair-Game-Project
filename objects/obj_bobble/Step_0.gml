@@ -16,7 +16,7 @@ if game_state == GAME_STATE.WAITING or game_state == GAME_STATE.CATCHING or game
 
 if game_state == GAME_STATE.THROWING or game_state == GAME_STATE.MOVING
 {
-	// Move the bobble in hte direction the player pressed
+	// Move the bobble in the direction the player pressed
 	x += _hmove * move_speed * DELTA
 	// Clamp the x so the bobble doesn't move out of the room
 	x = clamp(x, 0, room_width)

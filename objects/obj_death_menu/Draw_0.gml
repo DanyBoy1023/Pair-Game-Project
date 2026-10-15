@@ -1,0 +1,6 @@
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text(room_width/2, room_height*1/4, "You Lost")
+draw_text(room_width/2, room_height/2, "You caught " + string(obj_game_manager.catch_count) + " fih")
+draw_self()
+draw_text(x, y-20, "Play Again")

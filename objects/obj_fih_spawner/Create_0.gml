@@ -1,12 +1,18 @@
+/*
+every x amount of spawns, spawns an evil fih
+*/
 
-possible_fih_spawns = [obj_fast_fih, obj_slow_fih, obj_small_fih, obj_evil_fih]
-possible_fih_spawns = [obj_evil_fih]
+possible_fih_spawns = [obj_fast_fih, obj_slow_fih, obj_small_fih]
+
 
 max_fih_amount = 3
 
 min_fih_spawn_wait_seconds = 1
 max_fih_spawn_wait_seconds = 2
 waiting_to_spawn = false
+
+replace_spawn_with_evil_spawn = false
+spawn_count = 0
 
 start_fih_spawn()
 
@@ -19,10 +25,16 @@ function start_fih_spawn()
 
 function spawn_random_fih()
 {
-	var fih = instance_create_layer(0,obj_fih_landing_spot.y, "Fih", get_random_fih_to_spawn())
+	spawn_count++
+	instance_create_layer(0,obj_fih_landing_spot.y, "Fih", get_random_fih_to_spawn())
 }
 
 function get_random_fih_to_spawn()
 {
+	if replace_spawn_with_evil_spawn or spawn_count % 4 == 0
+	{
+		replace_spawn_with_evil_spawn = false
+		return obj_evil_fih
+	}
 	return possible_fih_spawns[random_range(0, array_length(possible_fih_spawns))]
 }

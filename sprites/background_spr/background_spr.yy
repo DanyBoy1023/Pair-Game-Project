@@ -5,7 +5,7 @@
   "bbox_bottom":319,
   "bbox_left":0,
   "bbox_right":179,
-  "bbox_top":0,
+  "bbox_top":97,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -19,6 +19,7 @@
   "height":320,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"a0b36444-aac4-4ca3-b414-a3e217872979","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a0b36444-aac4-4ca3-b414-a3e217872979","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"52bf534b-9429-4aea-b5ab-90d9547fe53a","blendMode":0,"displayName":"default","isLocked":false,"name":"52bf534b-9429-4aea-b5ab-90d9547fe53a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"background_spr",

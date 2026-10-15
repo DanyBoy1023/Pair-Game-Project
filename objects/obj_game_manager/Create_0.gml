@@ -1,3 +1,4 @@
+draw_set_font(fnt_kenney_mini)
 /*
 3 lives
 when they lose a fih 
@@ -75,6 +76,7 @@ function catch_fih(fih)
 	}
 	if cought_fih.object_index == obj_evil_fih
 	{
+		catch_count--
 		state = GAME_STATE.EVIL_DAMAGE
 		
 		alarm[0] = 2 * FPS
@@ -89,6 +91,7 @@ function catch_fih(fih)
 function end_attack_seq()
 {
 	state = GAME_STATE.WAITING
+	mid_lose_animation = false
 	instance_destroy(cought_fih)
 	layer_sequence_destroy(sequence_id)
 	obj_health_bar.take_damage()
@@ -110,4 +113,5 @@ function lose_fih()
 function end_game()
 {
 	state = GAME_STATE.DEAD
+	obj_death_menu.visible = true
 }
