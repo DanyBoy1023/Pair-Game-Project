@@ -10,8 +10,8 @@
   "function":2,
   "name":"ac_fast_fih_swim_curve",
   "parent":{
-    "name":"Fih Variations",
-    "path":"folders/Objects/Fih/Fih Variations.yy",
+    "name":"Reeling Animation Curves",
+    "path":"folders/Objects/Fih/Fih Variations/Reeling Animation Curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

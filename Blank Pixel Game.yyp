@@ -16,6 +16,7 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fih","folderPath":"folders/Objects/Fih.yy","name":"Fih","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fih Variations","folderPath":"folders/Objects/Fih/Fih Variations.yy","name":"Fih Variations","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Reeling Animation Curves","folderPath":"folders/Objects/Fih/Fih Variations/Reeling Animation Curves.yy","name":"Reeling Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fishing Pole","folderPath":"folders/Objects/Fishing Pole.yy","name":"Fishing Pole","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Managers","folderPath":"folders/Objects/Managers.yy","name":"Managers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -41,6 +42,8 @@
   "name":"Blank Pixel Game",
   "resources":[
     {"id":{"name":"ac_fast_fih_swim_curve","path":"animcurves/ac_fast_fih_swim_curve/ac_fast_fih_swim_curve.yy",},},
+    {"id":{"name":"ac_slow_fih_swim_curve","path":"animcurves/ac_slow_fih_swim_curve/ac_slow_fih_swim_curve.yy",},},
+    {"id":{"name":"ac_small_fih_swim_curve","path":"animcurves/ac_small_fih_swim_curve/ac_small_fih_swim_curve.yy",},},
     {"id":{"name":"ac_throwing_position","path":"animcurves/ac_throwing_position/ac_throwing_position.yy",},},
     {"id":{"name":"fnt_kenney_mini","path":"fonts/fnt_kenney_mini/fnt_kenney_mini.yy",},},
     {"id":{"name":"obj_bobble","path":"objects/obj_bobble/obj_bobble.yy",},},

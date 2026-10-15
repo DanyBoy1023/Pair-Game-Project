@@ -14,7 +14,7 @@ if game_state != GAME_STATE.REELING
 	if catch_count == forced_evil_spawn
 	{
 		replace_spawn_with_evil_spawn = true
-		if not waiting_to_spawn and fih_count < 1
+		if not waiting_to_spawn and fih_count < max_fih_amount
 		{
 			start_fih_spawn()
 		}
